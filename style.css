@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-image: #f0f0f0;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.container {
+    text-align: center;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+h1 {
+    font-size: 2rem;
+    color: #3498db;
+}
+
+.search {
+    margin-bottom: 20px;
+}
+
+#locationInput {
+    padding: 12px;
+    width: calc(100% - 100px);
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.3s;
+}
+
+#locationInput:focus {
+    border-color: #3498db;
+}
+
+#searchButton {
+    padding: 12px 20px;
+    margin-top: 20px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#searchButton:hover {
+    background-color: #2980b9;
+}
+
+#weatherInfo p {
+    margin: 10px 0;
+    font-size: 1.2rem;
+}
+
+.hidden {
+    display: none;
+}
+
+#toggleMode {
+    margin-top: 20px;
+    padding: 12px 20px;
+    background-color: #2c3e50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#toggleMode:hover {
+    background-color: #1a252f;
+}
+
+.dark-mode {
+    background-color: #2c3e50;
+    color: #f0f0f0;
+}
+
+.dark-mode .container {
+    background-color: #3b4b5c;
+}
+
+.dark-mode #searchButton {
+    background-color: #1abc9c;
+}
+
+.dark-mode #searchButton:hover {
+    background-color: #16a085;
+}
+
+.dark-mode #toggleMode {
+    background-color: #e74c3c;
+}
+
+.dark-mode #toggleMode:hover {
+    background-color: #c0392b;
+}
